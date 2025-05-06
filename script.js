@@ -1,43 +1,34 @@
 // script.js
 
-function checkMathAnswer() {
-    const answer = document.getElementById('math-answer').value;
-    const feedback = document.getElementById('math-feedback');
-    if (answer == 6912) {
-        feedback.textContent = "Correct! Well done!";
-    } else {
-        feedback.textContent = "Oops! Try again.";
-    }
+// Function to navigate to the specified page
+function navigateTo(page) {
+  window.location.href = page;
 }
 
-function checkStatsAnswer() {
-    const answer = document.getElementById('stats-answer').value;
-    const feedback = document.getElementById('stats-feedback');
-    if (answer == "72") {
-        feedback.textContent = "Correct!";
-    } else {
-        feedback.textContent = "Try again!";
-    }
+// Cipher tracking variables
+let cipher = "";
+
+// Function to check the cipher input
+function checkCipher(letter) {
+  cipher += letter;
+
+  // If the cipher is complete and correct ("code"), redirect to the secret page
+  if (cipher === "CODE") {
+    window.location.href = "1234.html";
+  }
 }
 
-function showSecretMessage() {
-    const secret = document.getElementById('secret-message');
-    if (secret.classList.contains("hidden")) {
-        secret.classList.remove("hidden");
-    } else {
-        secret.classList.add("hidden");
-    }
-}
+// Extra functionality for clickable elements
+document.addEventListener("DOMContentLoaded", () => {
+  // Add any additional event listeners or functionality as needed
+  console.log("Scrapbook site loaded successfully!");
 
-function checkPythonCode() {
-    const userCode = document.getElementById('python-code').value;
-    const output = document.getElementById('python-output');
-    if (userCode.includes('print') && userCode.includes("Mother's Day")) {
-        output.textContent = "Code is correct! Output: Happy Mother's Day!";  } else {
-        output.textContent = "Oops, try again.";
-    }
-}
-    } else {
-        output.textContent = "Oops, try again.";
-    }
-}
+  // Example: Allow hover animation to change color of clicked letters
+  const crookedLetters = document.querySelectorAll(".crooked");
+  crookedLetters.forEach(letter => {
+    letter.addEventListener("click", () => {
+      letter.style.color = "#e66"; // Change color when clicked
+      letter.style.fontSize = "1.5rem"; // Slight zoom effect
+    });
+  });
+});
