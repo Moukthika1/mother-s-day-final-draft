@@ -1,47 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <link rel="stylesheet" href="style.css">
-   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Statistics - Mother's Day Scrapbook</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Statistics - Mother's Day</title>
+  <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
-    <div class="scrapbook-background">
-        <h1 class="title">Statistics & Mother’s Day Fun</h1>
-        <p class="intro-text">Let’s dive into statistics and explore some interesting data!</p>
+  <div class="scrapbook">
+    <h1>Statistics - Measuring the beauty of life!</h1>
+    <p>Fun fact: Did you know that the probability of picking a red flower from a garden is:</p>
 
-        <!-- Stats Question -->
-        <div class="stats-question">
-            <h2>What is the average number of flowers given on Mother’s Day?</h2>
-            <p>Type your answer:</p>
-            <input type="text" id="stats-answer">
-            <button onclick="checkStatsAnswer()">Submit</button>
-            <p id="stats-feedback"></p>
-        </div>
+    <pre>
+      Probability = (Number of Red Flowers) / (Total Number of Flowers)
+    </pre>
 
-        <!-- Interactive Graph (example only) -->
-        <div class="stats-graph">
-            <div class="bar" style="height: 70%;">Flowers</div>
-            <div class="bar" style="height: 30%;">Cards</div>
-            <div class="bar" style="height: 50%;">Chocolates</div>
-        </div>
+    <p>Here's another one—how likely is it that today will be a perfect day? 💖</p>
 
-        <!-- Animated Butterfly -->
-        <div class="butterfly" onclick="location.href='python.html'">🦋</div>
+    <div class="bloom" onclick="navigateTo('python.html')">Python Page</div>
+    <div class="flower" onclick="navigateTo('love.html')">Love Page</div>
+
+    <div class="cipher-clue">
+      <span class="crooked" onclick="checkCipher('C')">C</span>hoose
+      <span class="crooked" onclick="checkCipher('O')">O</span>ptimism
+      <span class="crooked" onclick="checkCipher('D')">D</span>aily
+      <span class="crooked" onclick="checkCipher('E')">E</span>very moment.
     </div>
+  </div>
 
-    <script>
-        function checkStatsAnswer() {
-            const answer = document.getElementById('stats-answer').value;
-            if (answer == "72") {
-                document.getElementById('stats-feedback').innerText = "Correct! 72 is the average number.";
-            } else {
-                document.getElementById('stats-feedback').innerText = "Oops! Try again.";
-            }
-        }
-    </script>
-<script src="script.js"></script>
+  <script src="../script.js"></script>
 </body>
 </html>
