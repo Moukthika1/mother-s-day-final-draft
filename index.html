@@ -1,0 +1,41 @@
+<!-- index.html - Main Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mother's Day Scrapbook</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <h1 class="title">To the Most Amazing Mom</h1>
+    <p class="intro">Explore our scrapbook of love, learning, and wonder. Some surprises are hidden. Click wisely.</p>
+
+    <!-- Interactive Letters for Cipher -->
+    <div class="cipher-code">
+      <span class="letter">1</span>
+      <span class="letter">2</span>
+      <span class="letter">3</span>
+      <span class="letter">4</span>
+    </div>
+
+    <!-- Animated Elements for Navigation -->
+    <div class="animated-items">
+      <div class="flower" onclick="location.href='math.html'"></div>
+      <div class="butterfly" onclick="location.href='science.html'"></div>
+      <div class="insect" onclick="location.href='python.html'"></div>
+      <div class="book" onclick="location.href='stats.html'"></div>
+      <div class="heart" onclick="location.href='love.html'"></div>
+    </div>
+  </div>
+
+  <script>
+    // Secret cipher redirect logic
+    const url = window.location.href;
+    if (url.endsWith("1234")) {
+      window.location.href = "secret.html";
+    }
+  </script>
+</body>
+</html>
