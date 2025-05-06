@@ -1,43 +1,28 @@
-<!-- index.html - Main Page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <link rel="stylesheet" href="style.css">
- <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mother's Day Scrapbook</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Happy Mother's Day</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="page-wrapper">
-    <h1 class="title">To the Most Amazing Mom</h1>
-    <p class="intro">Explore our scrapbook of love, learning, and wonder. Some surprises are hidden. Click wisely.</p>
+  <div class="scrapbook">
+    <h1>Happy <span class="crooked" onclick="navigateTo('science.html')">M</span>other's Day!</h1>
+    <p>
+      To the most wonderful mom in the world—explore this garden of knowledge and love:
+    </p>
 
-    <!-- Interactive Letters for Cipher -->
-    <div class="cipher-code">
-      <span class="letter">1</span>
-      <span class="letter">2</span>
-      <span class="letter">3</span>
-      <span class="letter">4</span>
-    </div>
+    <div class="butterfly" onclick="navigateTo('math.html')" title="Math Page"></div>
+    <div class="insect" onclick="navigateTo('python.html')" title="Python Page"></div>
+    <div class="flower" onclick="navigateTo('love.html')" title="Love Page"></div>
+    <div class="bloom" onclick="navigateTo('stats.html')" title="Statistics Page"></div>
 
-    <!-- Animated Elements for Navigation -->
-    <div class="animated-items">
-      <div class="flower" onclick="location.href='math.html'"></div>
-      <div class="butterfly" onclick="location.href='science.html'"></div>
-      <div class="insect" onclick="location.href='python.html'"></div>
-      <div class="book" onclick="location.href='stats.html'"></div>
-      <div class="heart" onclick="location.href='love.html'"></div>
-    </div>
+    <p>
+      Look closely—some letters are out of place... maybe they're trying to tell you something?
+    </p>
   </div>
 
-  <script>
-    // Secret cipher redirect logic
-    const url = window.location.href;
-    if (url.endsWith("1234")) {
-      window.location.href = "secret.html";
-    }
-  </script>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
