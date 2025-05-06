@@ -33,7 +33,10 @@ function checkPythonCode() {
     const userCode = document.getElementById('python-code').value;
     const output = document.getElementById('python-output');
     if (userCode.includes('print') && userCode.includes("Mother's Day")) {
-        output.textContent = "Code is correct! Output: Happy Mother's Day!";
+        output.textContent = "Code is correct! Output: Happy Mother's Day!";  } else {
+        output.textContent = "Oops, try again.";
+    }
+}
     } else {
         output.textContent = "Oops, try again.";
     }
