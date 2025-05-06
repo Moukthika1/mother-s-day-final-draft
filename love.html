@@ -1,37 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love - Mother's Day Scrapbook</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Love - Mother's Day</title>
+  <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
-    <div class="scrapbook-background">
-        <h1 class="title">A Message of Love for My Mom</h1>
-        <p class="intro-text">This is my way of saying thank you for everything, Mom. I love you!</p>
+  <div class="scrapbook">
+    <h1>Love - The essence of life!</h1>
+    <p>Mom, your love fills my heart every day. Here's a quote that reminds me of you:</p>
 
-        <!-- Heartfelt Message -->
-        <div class="message">
-            <p>Thank you for being the most wonderful mom. Your love and support have shaped me into who I am today. I love you forever!</p>
-        </div>
+    <blockquote>
+      “A mother's love is the fuel that enables a normal human being to do the impossible.”
+    </blockquote>
 
-        <!-- Interactive Secret Note -->
-        <div class="secret-note">
-            <button onclick="showSecretMessage()">Reveal Secret Message</button>
-            <div id="secret-message" class="hidden">You're the best mom in the world!</div>
-        </div>
-        
-        <!-- Interactive Butterfly -->
-        <div class="butterfly" onclick="location.href='index.html'">🦋</div>
+    <p>I love you, always and forever. ❤️</p>
+
+    <div class="flower" onclick="navigateTo('stats.html')">Statistics Page</div>
+    <div class="bloom" onclick="navigateTo('math.html')">Math Page</div>
+
+    <div class="cipher-clue">
+      <span class="crooked" onclick="checkCipher('C')">C</span>reate
+      <span class="crooked" onclick="checkCipher('O')">O</span>pen hearts
+      <span class="crooked" onclick="checkCipher('D')">D</span>aily
+      <span class="crooked" onclick="checkCipher('E')">E</span>verywhere.
     </div>
+  </div>
 
-    <script>
-        function showSecretMessage() {
-            document.getElementById('secret-message').classList.toggle('hidden');
-        }
-    </script>
-<script src="script.js"></script>
+  <script src="../script.js"></script>
 </body>
 </html>
