@@ -1,49 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
-  <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math - Mother's Day Scrapbook</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Math - Mother's Day</title>
+  <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
-    <div class="scrapbook-background">
-        <h1 class="title">Mathematics and Mother's Day</h1>
-        <p class="intro-text">Math is the language of the universe! Let's explore some fun mathematical concepts.</p>
+  <div class="scrapbook">
+    <h1>Math is the language of love!</h1>
+    <p>Exploring numbers and equations that make the world go 'round:</p>
 
-        <!-- Math puzzle sections -->
-        <div class="math-puzzle">
-            <h2>Try Solving This Puzzle!</h2>
-            <p>What’s 1234 + 5678?</p>
-            <input type="text" id="math-answer" placeholder="Enter answer here">
-            <button onclick="checkMathAnswer()">Submit</button>
-            <p id="math-feedback"></p>
-        </div>
+    <p>Did you know? The Fibonacci sequence is related to the golden ratio and can be found in flowers!</p>
 
-        <!-- Interactive Math Animations -->
-        <div class="interactive-math">
-            <div class="number-bubble">1</div>
-            <div class="number-bubble">2</div>
-            <div class="number-bubble">3</div>
-            <div class="number-bubble">4</div>
-        </div>
+    <div class="flower" onclick="navigateTo('science.html')">Science Page</div>
+    <div class="butterfly" onclick="navigateTo('python.html')">Python Page</div>
 
-        <!-- Animated butterfly leading to another page -->
-        <div class="butterfly" onclick="location.href='science.html'">🦋</div>
+    <p>Here's a fun math puzzle for you, Mom: What’s the sum of all odd numbers between 1 and 100?</p>
+
+    <p>Answer: <strong>2500</strong></p>
+
+    <div class="cipher-clue">
+      <span class="crooked" onclick="checkCipher('C')">C</span>alculate
+      <span class="crooked" onclick="checkCipher('O')">O</span>ut your
+      <span class="crooked" onclick="checkCipher('D')">D</span>reams
+      <span class="crooked" onclick="checkCipher('E')">E</span>very day.
     </div>
+  </div>
 
-    <script>
-        // Check math answer
-        function checkMathAnswer() {
-            const answer = document.getElementById('math-answer').value;
-            if (answer == 6912) {
-                document.getElementById('math-feedback').innerHTML = "Correct! Well done!";
-            } else {
-                document.getElementById('math-feedback').innerHTML = "Oops! Try again.";
-            }
-        }
-    </script>
-<script src="script.js"></script>
+  <script src="../script.js"></script>
 </body>
 </html>
